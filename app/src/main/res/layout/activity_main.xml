@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+   android:background="#0D000000">
+
+   <com.mancj.materialsearchbar.MaterialSearchBar
+       android:id="@+id/search_bar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       style="@style/MaterialSearchBarLight"
+       app:mt_speechMode="true"
+       app:mt_hint="Custom hint"
+       android:layout_margin="8dp"
+       app:mt_maxSuggestionsCount="10"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:layout_below="@id/search_bar"
+      android:orientation="vertical">
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="250dp"
+         android:src="@drawable/panda"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+      <ImageView
+          android:layout_width="0dp"
+          android:layout_height="50dp"
+         android:layout_weight="1"
+          android:layout_marginLeft="10dp"
+         android:src="@drawable/circle_panda"/>
+
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_weight="9">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:text="Desiigner - Panda (Official Audio)"
+         android:textStyle="bold"
+         android:textColor="@android:color/black"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="8dp"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Desiigner LOD | 600M views | 4 years ago"
+          android:layout_marginLeft="10dp"
+          android:textSize="12sp"/>
+
+   </LinearLayout>
+   </LinearLayout>
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="250dp"
+          android:src="@drawable/hymn"
+          android:layout_marginTop="25dp"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+         <ImageView
+             android:layout_width="0dp"
+             android:layout_height="50dp"
+             android:layout_weight="1"
+             android:layout_marginLeft="10dp"
+             android:src="@drawable/circle_panda"/>
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_weight="9">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coldplay - Hymn For The Weekend"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coldplay | 500M views | 1 years ago"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"/>
+
+         </LinearLayout>
+      </LinearLayout>
+
+
+
+
+
+   </LinearLayout>
+</RelativeLayout>
